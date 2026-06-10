@@ -70,7 +70,7 @@ Designed for brands that want transparency, depth, and distinction.`,
 From real estate to experiential spaces, we design motion-led storytelling that captivates and converts.
 Built to communicate scale, atmosphere, and impact.`,
     cta: 'Explore Visual Experiences',
-    href: '#contact',
+    href: '/services/visual-experiences',
   },
 ];
 
@@ -114,6 +114,13 @@ export default function Services() {
                   </Link>
                 ) : service.slug === 'ai-powered-ads' ? (
                   <Link to='/services/ai-powered-ads?mode=classic' className='service-card-cta'>
+                    <span>{service.cta}</span>
+                    <span className='service-cta-arrow' aria-hidden='true'>
+                      -&gt;
+                    </span>
+                  </Link>
+                 ) : service.slug === 'visual-experience' ? (
+                  <Link to='/services/visual-experiences?mode=classic' className='service-card-cta'>
                     <span>{service.cta}</span>
                     <span className='service-cta-arrow' aria-hidden='true'>
                       -&gt;

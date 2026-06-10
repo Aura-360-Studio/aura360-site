@@ -1,0 +1,37 @@
+/* Visual Experiences Page Styles */
+.visual-experiences-page {
+  /* Floating card styles to fit text content */
+  .service-page-floating-card {
+    aspect-ratio: auto !important;
+    height: auto !important;
+    max-height: none !important;
+    padding-bottom: 1.25rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    gap: 1rem !important;
+
+    .showcase-service-heading {
+      display: block !important;
+      
+      > div {
+        max-width: 100% !important;
+      }
+    }
+
+    .showcase-buy-copy {
+      max-width: 100% !important;
+      margin-bottom: 0.5rem !important;
+    }
+  }
+
+  /* Aspect ratios for gallery placeholders (both portrait 9:16 and landscape 16:9) */
+  .service-masonry-media {
+    &.is-portrait-hero {
+      aspect-ratio: 9 / 16 !important;
+    }
+    &.is-landscape-wide {
+      aspect-ratio: 16 / 9 !important;
+    }
+  }
+}

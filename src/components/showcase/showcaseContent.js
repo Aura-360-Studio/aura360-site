@@ -110,7 +110,7 @@ export const showcaseMediaBands = [
       copy:
         'We produce cinematic walkthroughs that transform environments into compelling visual narratives. Use this space for a headline, supporting copy, and a CTA once the third service direction is finalized.',
       ctaLabel: 'Explore Visual Experiences',
-      ctaHref: '#contact',
+      ctaHref: '/services/visual-experiences?mode=showcase',
     },
   },
 ];

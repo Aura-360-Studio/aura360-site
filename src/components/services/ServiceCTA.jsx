@@ -5,9 +5,9 @@ export default function ServiceCTA({ title, copy, buttonLabel, buttonHref }) {
   const searchParams = new URLSearchParams(location.search);
   const sourceMode = searchParams.get('mode') === 'classic' ? 'classic' : 'showcase';
   const whatsappUrl =
-    'https://wa.me/917411116694?text=Hi%20Aura%20360%20Studio%2C%20I%20want%20to%20discuss%20a%20project.';
+    'https://wa.me/9141671120?text=Hi%20Aura%20360%20Studio%2C%20I%20want%20to%20discuss%20a%20project.';
   const resolvedButtonHref =
-    buttonHref === '/#contact' ? (sourceMode === 'classic' ? '/#contact' : '/showcase#contact') : buttonHref;
+    buttonHref === '/#contact' ? (sourceMode === 'classic' ? '/classic#contact' : '/#contact') : buttonHref;
 
   return (
     <section className='service-page-section service-soft-cta'>

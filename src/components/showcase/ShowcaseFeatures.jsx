@@ -86,9 +86,15 @@ export default function ShowcaseFeatures() {
                 <p className='showcase-mini-label'>{item.card.eyebrow}</p>
                 <h3>{item.card.title}</h3>
                 <p>{item.card.copy}</p>
-                <a href={item.card.ctaHref} className='showcase-buy-cta showcase-feature-cta'>
-                  {item.card.ctaLabel}
-                </a>
+                {item.card.ctaHref.startsWith('/') ? (
+                  <Link to={item.card.ctaHref} className='showcase-buy-cta showcase-feature-cta'>
+                    {item.card.ctaLabel}
+                  </Link>
+                ) : (
+                  <a href={item.card.ctaHref} className='showcase-buy-cta showcase-feature-cta'>
+                    {item.card.ctaLabel}
+                  </a>
+                )}
               </div>
             ) : (
               <span>{item.title}</span>

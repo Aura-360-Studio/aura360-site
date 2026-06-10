@@ -12,6 +12,7 @@ import {
 } from './components';
 import ProductPhotography from './pages/ProductPhotography';
 import AdsNowAIPowered from './pages/AdsNowAIPowered';
+import VisualExperiences from './pages/VisualExperiences';
 import { initSmoothScroll } from './utils/smoothScroll';
 
 function HashScrollHandler() {
@@ -103,14 +104,25 @@ function AdsNowAIPoweredLayout() {
   );
 }
 
+function VisualExperiencesLayout() {
+  return (
+    <>
+      <Header />
+      <VisualExperiences />
+    </>
+  );
+}
+
 export default function App() {
   return (
     <Routes>
-      <Route path='/' element={<OnePageLayout />} />
+      <Route path='/' element={<ShowcaseLayout />} />
+      <Route path='/classic' element={<OnePageLayout />} />
       <Route path='/labs' element={<LabsLayout />} />
-      <Route path='/showcase' element={<ShowcaseLayout />} />
+      <Route path='/showcase' element={<Navigate to='/' replace />} />
       <Route path='/services/product-photography' element={<ProductPhotographyLayout />} />
       <Route path='/services/ai-powered-ads' element={<AdsNowAIPoweredLayout />} />
+      <Route path='/services/visual-experiences' element={<VisualExperiencesLayout />} />
       <Route path='*' element={<Navigate to='/' replace />} />
     </Routes>
   );

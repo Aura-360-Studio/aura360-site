@@ -21,7 +21,7 @@ const itemReveal = {
 
 export default function Contact() {
   const whatsappUrl =
-    'https://wa.me/917411116694?text=Hi%20Aura%20360%20Studio%2C%20I%20want%20to%20discuss%20a%20project.';
+    'https://wa.me/9141671120?text=Hi%20Aura%20360%20Studio%2C%20I%20want%20to%20discuss%20a%20project.';
   const { formRef, formData, errors, status, handleBlur, handleChange, handleSubmit } = useContactForm();
 
   return (
